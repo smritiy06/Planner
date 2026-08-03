@@ -7,11 +7,9 @@ body{
     background-color: #fadbe0;
     h1{
         font-family: Georgia, "Times New Roman", serif;
-        color: #0b5d3a;
     }
     p{
         font-family: Arial, Helvetica, sans-serif;
-        color: #4f5f55;
     }
 }
 
@@ -23,4 +21,124 @@ body{
     padding:40px;
     box-shadow: 
         0 20px 50px rgba(0,0,0,.08);
+}
+
+.header{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+    h1{
+        margin:0;
+        color:#14532d;
+        font-size:40px;
+    }
+    p{
+        margin-top:8px;
+        color:#5b6b63;
+    }
+}
+
+.date{
+    background-color: #ecf3e2;
+    color:#14532d;
+    padding:12px 18px;
+    border-radius:20px;
+    font-family:"Inter", sans-serif;
+}
+
+.progress-info{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:10px;
+    font-weight:bold;
+    color: #25472B;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.progress-bar{
+    width: 100%;
+    height: 16px;
+    background:#ecf3e2;
+    border-radius:50px;
+    overflow:hidden;
+}
+
+.progress{
+    width: 60%;
+    height: 100%;
+    background: #218549;
+    border-radius: 50px;
+}
+
+.progress-section p{
+    color: #2C5634;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.add-tasks{
+    display:flex;
+    gap:15px;
+    margin:35px 0;
+
+input{
+    width: 150px;
+    flex:1;
+    padding:15px;
+    border-radius:15px;
+    border:1px solid #abadac;
+    font-size:16px;
+}
+button{
+    width: 150px;
+    border: none;
+    border-radius: 15px;
+    background: #218549;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+}
+
+.tasks{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.task{
+    display:flex;
+    align-items:center;
+    padding:18px;
+    background:white;
+    border:1px solid #ececec;
+    border-radius:16px;
+}
+
+.task span{
+    margin-left:15px;
+    flex:1;
+    font-size:17px;
+
+}
+
+.completed{
+    text-decoration:line-through;
+    color:#888;
+}
+
+.actions{
+    display:flex;
+    gap:10px;
+}
+
+.actions button{
+    background:none;
+    border:none;
+    cursor:pointer;
+    font-size:18px;
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Planner</title>
 </head>
 <body>
@@ -14,10 +15,49 @@
                 <p>Stay organized. Get things done.</p>
             </div>
         <div class = "date">
-                📅 Saturday, August 3, 2026
+                📅 Monday, August 3, 2026
         </div>
         </div>
-        
+        <div class = "progress-section">
+            <div class = "progress-info">
+                <span>Progress</span>
+                <span id="progressPercent">60%</span>
+            </div>
+            <div class = "progress-bar">
+                <div class = "progress" id="progressBar">
+                </div>
+            </div>
+            <p id="progressText">3 out of 5 tasks completed</p>
+        </div>
+        <div class = "add-tasks">
+            <input 
+            id="taskInput"
+            type = "text" 
+            placeholder="Add new task...">
+            <button id="addBtn">
+                + Add Task
+            </button>
+        </div>
+
+        <div class = "tasks" id=""taskList>
+            <div class = "task">
+                <input type="checkbox" checked>
+                <span class="completed">Finish assignment</span>
+
+                <div class="actions">
+                    <button>🖊️</button>
+                    <button>🗑️</button>
+                </div>
+            </div>
+            <div class="task">
+            <input type="checkbox">
+            <span>Read 20 pages</span>
+            <div class="actions">
+                <button>🖊️</button>
+                <button>🗑️</button>
+            </div>
+        </div>
+        </div>
     </div>
 </body>
 </html>
