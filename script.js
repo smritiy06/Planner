@@ -1,7 +1,9 @@
 const input = document.getElementById("taskInput");
 const addBtn = document.getElementById("addBtn");
 const taskList = document.getElementById("taskList");
+const emptyState = document.getElementById("emptyState");
 
+const currentDate = document.getElementById("currentDate");
 const progressBar = document.getElementById("progressBar");
 const progressText = document.getElementById("progressText");
 
@@ -31,6 +33,7 @@ function addTask(){
     tasks.push(task);
 
     createTaskElement(task);
+    toggleEmptyState();
 
     updateProgress();
 
@@ -104,6 +107,7 @@ function createTaskElement(task){
         taskDiv.remove();
 
         tasks = tasks.filter(t => t !== task);
+        toggleEmptyState();
 
         updateProgress();
 
@@ -152,7 +156,7 @@ function loadTasks(){
         tasks.forEach(task => {
 
             createTaskElement(task);
-
+            toggleEmptyState();
         });
 
     }
@@ -160,7 +164,60 @@ function loadTasks(){
     updateProgress();
 
 }
+function displayDate(){
 
+    const today = new Date();
+
+    const hour = today.getHours();
+
+    let greeting = "";
+
+    if(hour >= 5 && hour < 12){
+
+        greeting = "🌅 Good Morning";
+
+    }
+    else if(hour >= 12 && hour < 17){
+
+        greeting = "🌤️ Good Afternoon";
+
+    }
+    else if(hour >= 17 && hour < 24){
+
+        greeting = "🌆 Good Evening";
+
+    }
+
+    const options = {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+    };
+
+    currentDate.innerHTML = `
+        <strong>${greeting}</strong><br>
+        ${"📅 "+ today.toLocaleDateString("en-US", options)}
+    `;
+    
+}
+
+function toggleEmptyState(){
+
+    if(tasks.length === 0){
+
+        emptyState.style.display = "flex";
+
+    }
+    else{
+
+        emptyState.style.display = "none";
+
+    }
+
+}
 // -------------------- START --------------------
 
 loadTasks();
+displayDate();
+toggleEmptyState();

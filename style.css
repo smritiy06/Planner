@@ -142,3 +142,69 @@ button{
     cursor:pointer;
     font-size:18px;
 }
+.task input[type="checkbox"]{
+
+    appearance:none;
+    -webkit-appearance:none;
+
+    width:24px;
+    height:24px;
+
+    border:2px solid #34a853;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    display:grid;
+    place-items:center;
+
+    transition:.25s ease;
+}
+.task input[type="checkbox"]:checked{
+
+    background:#218549;
+
+    border-color:#218549;
+
+}
+.task input[type="checkbox"]:hover{
+
+    transform:scale(1.08);
+
+}
+
+#emptyState{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    padding:40px 20px;
+
+    text-align:center;
+
+    color:#6b7280;
+
+}
+
+#emptyState{
+
+    font-size:60px;
+
+}
+
+#emptyState h4{
+    font-size:2.2rem;
+    margin:15px 0 8px;
+    color:#2e8b57;
+
+}
+
+#emptyState p{
+    font-size:1rem;
+    margin:0;
+    font-size:15px;
+
+}

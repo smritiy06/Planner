@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>Planner</title>
 </head>
 <body>
@@ -13,9 +15,7 @@
                 <h1>My Planner</h1>
                 <p>Stay organized. Get things done.</p>
             </div>
-        <div class = "date">
-                📅 Monday, August 3, 2026
-        </div>
+        <div class="date" id="currentDate"></div>
         </div>
         <div class = "progress-section">
             <div class = "progress-info">
@@ -39,7 +39,15 @@
         </div>
 
         <div class = "tasks" id="taskList">
-            
+            <div class="tasks" id="taskList">
+
+    <div id="emptyState">
+        
+        <h4>🌱<br />Nothing planned <br>yet</h4>
+        <p>Add your first task and start growing your day.</p>
+    </div>
+
+</div>
         </div>
         </div>
     </div>
