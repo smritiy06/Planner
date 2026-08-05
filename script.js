@@ -115,7 +115,9 @@ function createTaskElement(task){
 
     });
 
-    taskList.appendChild(taskDiv);
+    const footerQuote = document.getElementById("footerQuote");
+
+    taskList.insertBefore(taskDiv, footerQuote);
 
 }
 
@@ -204,14 +206,18 @@ function displayDate(){
 
 function toggleEmptyState(){
 
+    const footerQuote = document.getElementById("footerQuote");
+
     if(tasks.length === 0){
 
         emptyState.style.display = "flex";
+        footerQuote.style.display = "none";
 
     }
     else{
 
         emptyState.style.display = "none";
+        footerQuote.style.display = "flex";
 
     }
 

@@ -14,13 +14,15 @@ body{
 }
 
 .planner{
-    width:600px;
-    min-height:600px;
+    width:650px;
+    height:80vh;
     background:#fffdf7;
     border-radius:32px;
-    padding:40px;
+    padding:50px;
     box-shadow: 
         0 20px 50px rgba(0,0,0,.08);
+    display: flex;
+    flex-direction: column;
 }
 
 .header{
@@ -108,6 +110,9 @@ button{
     display:flex;
     flex-direction:column;
     gap:15px;
+    flex: 1;
+    overflow-y: auto;
+    margin-top: 20px;
 }
 
 .task{
@@ -207,4 +212,59 @@ button{
     margin:0;
     font-size:15px;
 
+}
+.footer-quote{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+
+    margin-top:30px;
+    padding:20px 0;
+
+    color:#2e8b57;
+    font-size:20px;
+    font-weight:600;
+
+    opacity:.85;
+
+}
+
+.footer-quote::before,
+.footer-quote::after{
+
+    content:"";
+
+    flex:1;
+    height:1px;
+
+    background:#cfe7d0;
+
+}
+.tasks::-webkit-scrollbar{
+    width: 8px;
+}
+
+.tasks::-webkit-scrollbar-track{
+    background: #edf8ef;
+    border-radius: 10px;
+}
+
+.tasks::-webkit-scrollbar-thumb{
+    background: #2e8b57;
+    border-radius: 10px;
+}
+
+.tasks::-webkit-scrollbar-thumb:hover{
+    background: #256d46;
+}
+.task-list{
+    max-height:320px;
+    overflow-y:auto;
+    padding-right:10px;
+}
+
+.task{
+    margin-right:5px;
 }
