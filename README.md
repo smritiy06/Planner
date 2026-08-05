@@ -94,7 +94,7 @@ The goal is to create an organized workspace that encourages consistency through
 **Smriti Yadav**
 
 - GitHub: https://github.com/smritiy06
-- LinkedIn: https://www.linkedin.com/in/smritiyadav06/
+- LinkedIn:https://www.linkedin.com/in/smriti-yadav-1194b9274/
 
 ---
 
