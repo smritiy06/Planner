@@ -96,8 +96,3 @@ The goal is to create an organized workspace that encourages consistency through
 - GitHub: https://github.com/smritiy06
 - LinkedIn:https://www.linkedin.com/in/smriti-yadav-1194b9274/
 
----
-
-## ⭐ Support
-
-If you like this project, consider giving it a ⭐ on GitHub!
