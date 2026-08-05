@@ -378,9 +378,22 @@ button{
 
 .add-tasks button{
 
-    width:140px;
+    height:60px;
 
-    flex-shrink:0;
+    padding:0 24px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:18px;
+
+    font-size:1.2rem;
+
+    font-weight:600;
+    width: 150px;
 
 }
 
