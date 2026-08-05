@@ -84,28 +84,39 @@ body{
 
 .add-tasks{
     display:flex;
+    align-items:stretch;
     gap:15px;
     margin:35px 0;
+}
 
-input{
-    width: 150px;
+.add-tasks input{
     flex:1;
-    padding:15px;
-    border-radius:15px;
+    height:58px;
+    padding:0 18px;
     border:1px solid #abadac;
+    border-radius:15px;
     font-size:16px;
 }
-button{
-    width: 150px;
-    border: none;
-    border-radius: 15px;
-    background: #218549;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-}
-}
 
+.add-tasks button{
+    width:150px;
+    height:58px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border:none;
+    border-radius:15px;
+
+    background:#218549;
+    color:white;
+
+    font-size:16px;
+    font-weight:600;
+
+    cursor:pointer;
+}
 .tasks{
     display:flex;
     flex-direction:column;
